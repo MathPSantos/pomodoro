@@ -34,7 +34,7 @@ export function PomodoroProvider({ children }: PomodoroProviderProps) {
     if (isActive && time > 0) {
       pomodoroTimeout = setTimeout(() => {
         setTime(time - 1);
-      }, 1000);
+      }, 100);
     } else if (isActive && time === 0) {
       setHasFinished(true);
       setIsActive(false);
