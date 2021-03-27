@@ -1,0 +1,23 @@
+.donateButton {
+  height: 2.5rem;
+
+  padding: 0 1rem;
+
+  font: 800 1.125rem "Mukta", sans-serif;
+  color: var(--red-600);
+  background: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.25rem;
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}

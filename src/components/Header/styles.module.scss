@@ -1,0 +1,47 @@
+.headerContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 5rem;
+}
+
+.headerContent {
+  max-width: 1120px;
+  height: 5rem;
+
+  padding: 0 1.5rem;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  nav {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+
+      cursor: pointer;
+
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+
+      & + svg {
+        margin-left: 0.75rem;
+      }
+    }
+
+    button {
+      margin-left: 2rem;
+    }
+  }
+}
