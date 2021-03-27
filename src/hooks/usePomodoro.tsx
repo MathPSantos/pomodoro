@@ -12,7 +12,7 @@ interface PomodoroContextData {
   hasFinished: boolean;
   startPomodoro: () => void;
   pausePomodoro: () => void;
-  resetPomodoro: (time: number) => void;
+  resetPomodoro: (minutes: number) => void;
 }
 
 interface PomodoroProviderProps {
@@ -50,10 +50,10 @@ export function PomodoroProvider({ children }: PomodoroProviderProps) {
     setIsActive(false);
   }
 
-  function resetPomodoro(time: number) {
+  function resetPomodoro(minutes: number) {
     clearTimeout(pomodoroTimeout);
     setIsActive(false);
-    setTime(time);
+    setTime(minutes * 60);
     setHasFinished(false);
   }
 
