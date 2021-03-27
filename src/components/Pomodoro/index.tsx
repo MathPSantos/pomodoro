@@ -1,6 +1,7 @@
 import { SessionButton } from "./SessionButton";
-import styles from "./styles.module.scss";
 import { TargetTimeButton } from "./TargetTimeButton";
+
+import styles from "./styles.module.scss";
 
 export function Pomodoro() {
   return (
