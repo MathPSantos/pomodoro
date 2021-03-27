@@ -10,11 +10,13 @@ export function Header() {
         <img src="/images/logo.svg" alt="" />
 
         <nav>
-          <FiSettings />
+          {/* <FiSettings /> */}
 
-          <FiGithub />
+          <a target="_blank" href="https://github.com/MathPSantos/pomodoro">
+            <FiGithub />
+          </a>
 
-          <DonateButton />
+          {/* <DonateButton /> */}
         </nav>
       </div>
     </header>
